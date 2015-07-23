@@ -1,411 +1,735 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+<title>Passwords - please make the pain stop</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Alex Willmer">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/night.css" id="theme">
+<link rel="stylesheet" href="lib/css/zenburn.css"><!-- Syntax highlighting -->
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<script src="print.js"></script>
+<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+<style>
+html.darkblur .backgrounds {
+    filter: blur(4px) brightness(0.4);
+    -webkit-filter: blur(4px) brightness(0.4);
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+html.blur .backgrounds {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+html.dark .backgrounds {
+    filter: brightness(0.4);
+    -webkit-filter: brightness(0.4);
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-transform: none;
+    text-shadow: 0px 3px 3px rgba(150, 150, 150, 0.5);
+}
+.reveal pre code {
+    max-height: none;
+    font-size:130%;
+    line-height:1.2;
+}
+#name-badge {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-top: 150px;
+}
+.reveal section ul {
+    list-style: none;
+}
+blockquote {text-align: left;}
+blockquote p {width: 100%;}
+cite {
+    display: block;
+    text-align: right;
+    font-size: 80% !important;
+}
+.speaker-controls-notes .value {
+    font-size: none;
+}
+.reveal table.comparison {
+    width: 800px;
+}
+.reveal table.comparison th,
+.reveal table.comparison td {
+    width: 50%;
+}
+.reveal table th, .reveal table td{
+    padding: 0.4em 0.5em;
+}
+.reveal table td {
+    border: none;
+}
+.reveal li pre {
+    width: 100%;
+}
+</style>
+</head>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+<body>
+<div class="reveal">
+<div class="slides"><!-- Each section element inside is displayed as a slide -->
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-state="darkblur" data-background="6101434856_bedb5fa5ee_o.jpg" -->
+<!-- .slide: class="center" -->
+<!-- https://www.flickr.com/photos/49889874@N05/6101434856/-->
+# Passwords
+## Please make the pain stop<!-- .element: style="color:#00C5CD;" -->
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+Alex Willmer | <a href="https://twitter.com/moreati">@moreati</a>
+</script></section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="16904900381_d89914b103_k.jpg" -->
+<!-- https://www.flickr.com/photos/lwpkommunikacio/16904900381 -->
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+<img id="name-badge" src="Hello_my_name_is_alex.svg" type="image/svg+xml"
+     alt="Hello my name is Alex">
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+Note:
+It's been 4 minutes since my last login
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+My addiction started in 1996 when I typed opensesame into a new Freeserve account
+It grew from there. 1 password became 10, 10 became a 100
+I've since lost count. Some days I get through 20 in a single binge
+</script></section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+<section data-markdown><script type="text/template">
+### Users suck at passwords
+<!-- .slide: data-state="dark" data-background="SpaceBalls04.jpg" -->
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+Everyone
+ - Chooses `123456`
+ - .. then reuses it
+ - .. then writes it down
+ - .. then shares it
+ - .. and gets phished
+ - .. and *still* forgets it
+</script></section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+<section data-markdown><script type="text/template">
+### Servers suck at passwords
+<!-- .slide: data-state="dark" data-background="holy_grail_bridgekeeper.jpg" -->
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+#### Your password<sup>†</sup> must satisfy the following rules
+ - At least 1 capital letter
+ - At least 1 lowercase number
+ - At least 14 ¼ characters
+ - Exactly 3 unique symbols
+   - Allowed symbols: `)` or `!`
+ - Include
+   - Airspeed velocity of an unladen swallow
+   - The capital of Assyria
+ - Changed every 2 quinzièmes
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+<br>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+<p class="fragment">† Passwords are encrypted with *military grade* ROT13</p>
+</script></section>
 
-			</div>
+<section data-markdown><script type="text/template">
+### It's getting worse
 
-		</div>
+ - Passwords are breeding like cockroaches
+ - Strong passwords are too complex
+ - Usable passwords are too weak
+    - .. and the bar is rising
+ - Devices with no keyboard ask for passwords
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+</script></section>
+<section data-markdown><script type="text/template">
 
-		<script>
+### Passwords won't die
+> There is no doubt that over time, people are going to rely less and less on passwords.
+> <cite>[Bill Gates, 2004](http://news.cnet.com/2100-1029-5164733.html)</cite>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+<!-- -->
+> You will never need a password again
+> <cite>[IBM, 2011](http://asmarterplanet.com/blog/2011/12/the-next-5-in-5-you-will-never-need-a-password-again.html)<cite>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+<!-- -->
+> The age of the password is over.
+> <cite>[Wired, 2012](http://www.wired.com/2012/11/ff-mat-honan-password-hacker/)</cite>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+<!-- -->
+> Passwords are dead
+> <cite>[Heather Adkins, Google, Manager Infosec , 2013](http://www.cnet.com/news/google-security-exec-passwords-are-dead/)</cite>
 
-		</script>
+<!-- -->
+> The password is finally dying
+> <cite>[WSJ, 2014](http://www.wsj.com/articles/the-password-is-finally-dying-heres-mine-1405298376)</cite>
 
-	</body>
+</script></section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-state="darkblur" data-background="Sir_Winston_S_Churchill.jpg" -->
+<!-- .slide: class="center" -->
+
+> Passwords are the worst form of authentication,
+> <br style="line-height: 1.8em;">
+> except all the other forms that we've tried
+> <!-- .element style="font-size: 200%;" -->
+> <cite>Winston Churchill (maybe)</cite>
+
+
+</script></section><section data-markdown><script type="text/template">
+### Passwords are the least worst
+| Passwords         |  |
+|-------------------|--|
+| Familiar          |  |
+| Standardised      |  |
+| Free to implement |  |
+| Easy to deploy    |  |
+| Easy to reissue   |  |
+| No third parties  |  |
+| Work everywhere   |  |
+<!-- .element class="comparison" -->
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Passwords v Federated login
+
+| Passwords         | Federated logins   |
+|-------------------|--------------------|
+| Familiar          | Somewhat familiar  |
+| Standardised      | Fragmented         |
+| Free to implement | Cheap              |
+| Easy to deploy    | Easy to deploy     |
+| Easy to reissue   | Don't need reissue<!-- .element class="fragment highlight-green" data-fragment-index="0"--> |
+| No third parties  | Leak tracking data<!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Work everywhere   | Only on networks  <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+<!-- .element class="comparison" -->
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Passwords v Hardware Tokens
+
+| Passwords         | Hardware tokens           |
+|-------------------|---------------------------|
+| Familiar          | Require training         <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Standardised      | Proprietary              <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Free to implement | Expensive to implement<!-- .element class="fragment highlight-red" data-fragment-index="1"-->    |
+| Easy to deploy    | Hard to deploy<!-- .element class="fragment highlight-red" data-fragment-index="1"-->         |
+| Easy to reissue   | Hard to reissue<!-- .element class="fragment highlight-red" data-fragment-index="1"-->      |
+| No third parties  | No third parties  |
+| Work everywhere   | Most environments | 
+<!-- .element class="comparison" -->
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Passwords v Software tokens/Phones
+
+| Passwords         | Phones and Apps        |
+|-------------------|------------------------|
+| Familiar          | Require training      <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Standardised      | Fragmented            <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Free to implement | Inexpensive            |
+| Easy to deploy    | Easy-ish to deploy     |
+| Easy to reissue   | Easy-ish to reissue    |
+| No third parties  | May need third parties<!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Work everywhere   | Most environments      |
+<!-- .element class="comparison" -->
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Passwords v Biometics
+
+| Passwords         | Biometrics               |
+|-------------------|--------------------------|
+| Familiar          | Familiar                <!-- .element class="fragment highlight-green" data-fragment-index="0"--> |
+| Standardised      | Proprietary             <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Free to implement | Expensive to implement  <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Easy to deploy    | Hard to deploy          <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| Easy to reissue   | Impossible to reissue   <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+| No third parties  | No third parties         |
+| Work everywhere   | Almost nowhere          <!-- .element class="fragment highlight-red" data-fragment-index="1"--> |
+<!-- .element class="comparison" -->
+
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Mitigations: Passphrase generators
+
+<br>
+
+- Don't generate passwords, generate pass**phrases**
+- No mixed case, no digits, no symbols
+- Add words to increase entropy
+- I recommend [Horsephrase](https://pypi.python.org/pypi/horsephrase)
+  by [Glyph](https://glyph.twistedmatrix.com/)
+
+```nohighlight
+pip install horsephrase
+```
+
+```nohighlight
+horsephrase
+kinder reflection television anticipate
+```
+```nohighlight
+horsephrase --count 5 generate
+breastings scans mistakings qualifies screamed
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Mitigations: Password permute
+
+Passwords that group characters are easier to type on mobile
+
+<table>
+<tr><td>`6n04%Ei'Hm3V`
+    <td class=fragment data-fragment-index=1><span class="fragment highlight-red" data-fragment-index=3>24</span> taps
+    <td class=fragment data-fragment-index=1><span class="fragment highlight-red" data-fragment-index=3>9</span> keyboard changes
+<tr><td class=fragment data-fragment-index=2>`EHVnim6043%'`
+    <td class=fragment data-fragment-index=3><span style="color:#17ff2e">17</span> taps
+    <td class=fragment data-fragment-index=3><span style="color:#17ff2e">2</span> keyboard changes</tr>
+</table>
+
+```nohighlight
+pip install password-permute
+```
+<!-- .element class="fragment" data-fragment-index="4" -->
+
+```nohighlight
+password-permute 'm#o)fp^2aRf207'
+Rmofpaf2207)#^
+```
+<!-- .element class="fragment" data-fragment-index="4" -->
+
+- https://pypi.python.org/pypi/password-permute <!-- .element class="fragment" data-fragment-index="4" -->
+- [Exploring Usability and Security Metrics
+for Passwords on Mobile Platforms](http://jfranklin.me/prez/ACSAC-Poster-FINAL.pdf)<!-- .element class="fragment" data-fragment-index="4" -->
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Encourage strong passwords
+
+ - Provide strength feedback as the user types
+
+![Django ZXCVBN](295712Capturedu20150201153746.png)
+
+- https://pypi.python.org/pypi/django-zxcvbn-password
+- [Impact of Guidance &
+Feedback on Password-Creation Behavior](https://cups.cs.cmu.edu/rshay/pubs/Feedback.pdf)
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Allow users to see their password
+
+<style>
+.reveal img.fragment.current-visible.replace {display: none;}
+.reveal img.fragment.current-visible.replace.current-fragment {display: inline;}
+</style>
+
+![](show_pass4_01.png)
+ - http://www.lukew.com/ff/entry.asp?1941
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Don't disable password managers
+
+Don't do this
+```html
+<input type=password autocomplete=off>
+```
+Most browsers will ignore it anyway
+
+<br>
+Really, really don't do this
+```html
+<input type=password onpaste="return false">
+```
+
+Note:
+If you really need proof of presence, use 2-step authentication
+</script></section>
+<section>
+<h3><img style="width:33%; border:none; background:none;" alt="FIDO Alliance" src="FIDO_Alliance_Logo.png"></h3>
+
+<ul>
+    <li>Setup to fix strong authentication
+    <ul>
+      <li>Open specifications
+      <li>Optional <a href="https://fidoalliance.org/certification/fido-certified/">certification</a> testing and logo programme
+      <li>Public Key Cryptography
+    </ul>
+    <br>
+    <li class="fragment" data-fragment-index="1">Multiple authentication methods
+    <ul class="fragment" data-fragment-index="1">
+        <li>e.g. hardware token, fingerprint, pin
+    </ul>
+    <li class="fragment" data-fragment-index="1">Multiple transports
+    <ul class="fragment" data-fragment-index="1">
+        <li>e.g. USB HID, BLuetooth LE, NFC
+    </ul>
+    <br>
+    <li class="fragment" data-fragment-index="2">Single browser API
+</ul>
+
+<aside class=notes>
+Note:
+Think WiFi Alliance, but for authentication
+No sensitive information stored by the server or the browser
+</aside>
+</section>
+<section data-markdown><script type="text/template">
+| <h4>UAF - Universal Authentication Framework</h4> | <h4>U2F - Universal Second Factor</h4> |
+|---------------------------------------------------|----------------------------------------|
+| Intended to replace a password                    | Intended to complement a password      |
+<!-- .element: class="comparison" -->
+
+</script></section>
+<section>
+
+<img src="graphic_Registration.png">
+
+<aside class=notes>
+<li>Biometric data and private keys never leaves the device
+<li>Server only stores public key
+<li>No third parties are involved in authentication
+<li>Phishing resistance - only registered sites can initiate authentication
+</aside>
+</section>
+<section>
+
+<img src="graphic_Login.png">
+
+</section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="2652167644_a583680086_o.jpg" -->
+<!-- https://www.flickr.com/photos/stewf/2652167644 -->
+### Registering: server
+#### Server generates a challenge
+
+```python
+import json
+
+from u2flib_server import u2f_v2 as u2f
+
+APP_ID = 'https://example.com' # Our origin
+
+def start_register(user, session):
+    challenge = u2f.start_register(self.app_id)
+    session.set(user, 'u2f_register', challenge)
+    return json.dumps(challenge)
+```
+
+The challenge includes a cryptographic nonce
+<!-- .element: class="fragment" data-fragment-index="1"-->
+```json
+{"appId":"https://example.com",
+ "version":"U2F_V2",
+ "challenge":"df-15CrPww3PH4S49-iHSZx3kkKz63Glqeysbm-yGwE"}
+```
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+Note:
+python-u2flib-server is BSD licensed
+UAF and U2F require a secure (i.e. HTTPS) connection
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-state="dark" data-background="13792583873_832a262252_k.jpg" -->
+<!-- https://www.flickr.com/photos/110751683@N02/13792583873/ -->
+### Registering: browser
+#### Javascript relays the challenge to the device
+
+```javascript
+var challenge = JSON.parse('{"appId":..., "challenge":...');
+
+// Ask the device to generate a private key & sign our challenge.
+// For any signature the device must be activated by the user.
+u2f.register([challenge], [], function(response) {
+    var responseField = document.getElementById("response");
+    responseField.value = JSON.stringify(response);
+    responseField.form.submit();
+});
+```
+
+The signed response is sent to the server
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+```json
+{"appId":"https://example.com",
+ "version":"U2F_V2",
+ "challenge":"df-15CrPww3PH4S49-iHSZx3kkKz63Glqeysbm-yGwE",
+ "clientData":"eyJ0eXAiOiJuYXZ4MDA3Ii ... eSI6IiJ9",
+ "registrationData":"BQRRgOAwp4Q3T2_Jm-EO ... -MFWM"}
+ ```
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+</script></section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="2652167644_a583680086_o.jpg" -->
+### Registration: server
+#### Verify the response against the challenge
+```python
+def complete_register(user, session, response):
+    challenge = session.pop(user, 'u2f_register')
+    try:
+        registration, attestation_cert = u2f.complete_register(
+            challenge, reponse)
+    except Exception as e:
+        return "Registration failed"
+
+    user.save_device(key_handle=registration['keyHandle'],
+                     public_key=registraiton['publicKey'],
+                     app_id=['appId'])
+    return "Successfully registered"
+```
+
+Completed registration
+<!-- .element: class="fragment" data-fragment-index="1"-->
+```json
+{"appId":"https://example.com",
+ "publicKey":"BH7NCIsdE9gOVcQMb_Jn9jneYs_bQFcxSmb7OofWe"
+             "1YevdLURm0lsUo2RZHCjYFAD5IFFkfhK8DaZnIIrbA_gBk",
+ "keyHandle":"wXaJUYszyC5b8vaju1-71MfGEy04VELpYgJP8qfZWf"
+             "eTGQwuO3h8Fg7Rl5q3MDmpoGT87o8jKmrRH2hiYeJBgQ"}
+```
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+</script></section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="2652167644_a583680086_o.jpg" -->
+### Authentication: server
+#### Verify the password, then generate a challenge
+
+```python
+def start_authentication(username, password, session):
+    user = verify_password(username, password)
+    device = user.get_device()
+    challenge = u2f.start_authenticate(device.registration)
+    session.set(user, 'u2f_authenticate', challenge)
+    return json.dumps(challenge)
+```
+
+The challenge includes our ID, the key handle from <br>
+registration and a new cryptographic nonce
+<!-- .element: class="fragment" data-fragment-index="1"-->
+```json
+{"appId":"https://localhost:8007",
+ "version":"U2F_V2",
+ "challenge":"usb7nxQyQxeunU6f13TDW9IbRIiC0eFthUnJB4iwBBk",
+ "keyHandle":"wXaJUYszyC5b8vaju1-71MfGEy04VELpYgJP8qfZWf"
+             "eTGQwuO3h8Fg7Rl5q3MDmpoGT87o8jKmrRH2hiYeJBgQ"}
+```
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+</script></section>
+<section data-markdown><script type="text/template">
+<!-- .slide: data-state="dark" data-background="13792583873_832a262252_k.jpg" -->
+### Authentication: browser
+#### Javascript sends the challenge to the device
+
+```javascript
+var challenge = JSON.parse('{"appId":..., "keyHandle":...}');
+
+// Ask the device to sign our challenge with the private key
+// identified by keyHandle.
+// For any signature the device must be activated by the user.
+u2f.sign([challenge], function(response) {
+  var responseField = document.getElementById("response");
+  responseField.value = JSON.stringify(response);
+  responseField.form.submit();
+});
+```
+
+The response is sent to the server
+<!-- .element: class="fragment" data-fragment-index="1"-->
+```json
+{"keyHandle":"wXaJUYszyC5b8vaju1-71MfGEy04VELpYgJP8qfZWf"
+             "eTGQwuO3h8Fg7Rl5q3MDmpoGT87o8jKmrRH2hiYeJBgQ",
+ "clientData":"eyJ0eXAiOiJuY ... i8vbG9jYWxob3N0Ojia2V5IjoiIn0",
+ "signatureData":"AQAAAEgwRAIgY ... kxXLarwW0XdM2r-Nb00jwyiKiW"}
+```
+<!-- .element: class="fragment" data-fragment-index="1"-->
+</script></section>
+<section data-background="2652167644_a583680086_o.jpg">
+<h3>Authentication: verify the response</h3>
+
+<pre><code class="hljs python" data-trim>
+def finish_authenticate(user, session, response):
+    challenge = session.pop(user, 'u2f_authenticate')
+    device = user.get_device()
+    try:
+        counter, touch_asserted = u2f.verify_authenticate(
+            device.registration, challenge, response)
+    except Exception as e:
+        return "Authentication failed"
+
+    if counter <= device.counter:
+        # May indicate an attack e.g. a cloned device
+        logging.warn('Suspicious device counter')
+        return "Authentication failed"
+
+    device.counter = counter
+    device.save()
+    return "Successfully authenticated"
+</code></pre>
+</section>
+<section data-markdown><script type="text/template">
+<!-- .slide: class="center" -->
+### Demo
+
+- https://github.com/Yubico/python-u2flib-server/<!-- .element: class="fragment" data-fragment-index="1"-->
+- https://github.com/moreati/django-u2f/tree/django-otp-migration<!-- .element: class="fragment" data-fragment-index="1"-->
+- https://github.com/moreati/django-two-factor-auth/tree/django-u2f-integration<!-- .element: class="fragment" data-fragment-index="1"-->
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Browser support
+
+<style>
+.reveal img.logo {
+    width: 15%;
+    border: none;
+    background: none;
+}
+.reveal img.logo.unsupported {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+</style>
+
+Only Chrome supports U2F so far
+
+<img class="logo supported" alt="Supported on Chrome 41+" src="chrome_256x256.png">
+<img class="logo unsupported" alt="Not supported on Firefox yet" src="firefox_256x256.png">
+<img class="logo unsupported" alt="Not supported on Internet Explorer yet" src="internet-explorer_256x256.png">
+<img class="logo unsupported" alt="Not supported on Opera yet" src="opera_256x256.png">
+<img class="logo unsupported" alt="Not supported on Safari yet" src="safari_256x256.png">
+
+<br> 
+Edge browser on Windows 10 will support U2F
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+<img class="fragment logo supported" data-fragment-index=1
+     alt="Support expected on Edge/Windows 10" src="edge_256x256.png">
+
+<!-- https://github.com/alrra/logos -->
+<!-- https://commons.wikimedia.org/wiki/File:Bluetooth.svg -->
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Hardware support
+
+Browsers only support USB authenticators so far
+
+<img class="logo supported" alt="Supported on USB" src="usb-2-256-blue.png"><!-- http://www.iconsdb.com/ -->
+<img class="logo unsupported" alt="No supported on Bluetooth yet" src="Bluetooth-305px.svg.png">
+<img class="logo unsupported" alt="No supported on NFC yet" src="nfc-logo.png">
+
+Bluetooth & NFC specs were released July 2015, <br>
+browser support should improve in the coming months
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+Samsung Galaxy S5/S6 and Note 4 support UAF and U2F. <br>
+Android M phones with fingerprint readers will also support it
+<!-- .element: class="fragment" data-fragment-index="2"-->
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+### More info
+
+- Specifications
+  - https://fidoalliance.org/specifications/overview/
+
+- Tutorial
+  - https://fidoalliance.org/assets/downloads/FIDO-U2F-UAF-Tutorial-v1.pdf
+
+- History and sales pitch
+  - https://www.youtube.com/watch?v=sdJ47NFGlgk
+
+- Developer info and libraries
+  - https://developers.yubico.com/U2F/
+
+<aside class=notes>
+<li>pam-u2f for ssh and linux desktop
+</aside>
+</script></section>
+<section data-markdown><script type="text/template">
+### Image credits
+<small>
+- [Enter your password](https://www.flickr.com/photos/49889874@N05/6101434856/)
+  by Marc Faladeau
+- [Ismerős gyilkos](https://www.flickr.com/photos/lwpkommunikacio/16904900381)
+  by Lwp Kommunikáció
+- *1 2 3 4 5? That's amazing! I've got the same combination on my luggage!*,
+  scene from Spaceballs
+- *The Bridge of Death*, Monty Python and the Holy Grail
+- [Sir Winston S Churchill](https://commons.wikimedia.org/wiki/File:Sir_Winston_S_Churchill.jpg)
+  by United Nations Information Office, New York - Library of Congress,
+  Reproduction number LC-USW33-019093-C.
+  This image is available from the United States Library of Congress's
+  Prints and Photographs division under the digital ID fsa.8e00870.
+- Fido Alliance logo, [Fido Alliance](https://fidoalliance.org)
+- U2F Registration & UAF Registration flowcharts,
+  [Fido Alliance](https://fidoalliance.org)
+- [WOPR activity lights](https://www.flickr.com/photos/stewf/2652167644), War Games
+- [HTTPS browser](https://www.flickr.com/photos/110751683@N02/13792583873/)
+  by Yuri Samollov
+- [Web browser logos](https://github.com/alrra/logos)
+  by [Cătălin Mariș](https://twitter.com/alrra)
+- [BLuetooth logo](https://commons.wikimedia.org/wiki/File:Bluetooth.svg)
+  by [Jnmasek](//commons.wikimedia.org/w/index.php?title=User:Jnmasek)
+- [USB icon](http://www.iconsdb.com/royal-blue-icons/usb-2-icon.html)
+  by [iconsdb.com](http://www.iconsdb.com/)
+</small>
+</script></section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    controls: true,
+    progress: true,
+    slideNumber: true,
+    history: true,
+    center: false, // vertical centering
+    transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+    // Optional reveal.js plugins
+    dependencies: [
+        {src: 'lib/js/classList.js',
+         condition: function() { return !document.body.classList; } },
+        {src: 'plugin/markdown/marked.js', 
+         condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        {src: 'plugin/markdown/markdown.js',
+         condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        {src: 'plugin/highlight/highlight.js', async: true, 
+         condition: function() { return !!document.querySelector( 'pre code' ); },
+         callback: function() { hljs.initHighlightingOnLoad(); } },
+        {src: 'plugin/zoom-js/zoom.js', async: true },
+        {src: 'plugin/notes/notes.js', async: true }
+    ]
+});
+
+</script>
+
+</body>
 </html>
